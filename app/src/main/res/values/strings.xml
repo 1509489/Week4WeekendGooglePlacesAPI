@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Week 4 Weekend Google Places API</string>
+    <string name="title_activity_places">Map</string>
+    <string name="title_activity_maps">Map</string>
+</resources>

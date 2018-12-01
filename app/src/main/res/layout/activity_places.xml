@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          xmlns:map="http://schemas.android.com/apk/res-auto"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          tools:context=".PlacesActivity"
+          android:name="com.google.android.gms.maps.SupportMapFragment">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              xmlns:map="http://schemas.android.com/apk/res-auto"
+              android:layout_width="0dp"
+              android:layout_height="0dp"
+              android:id="@+id/map"
+              android:name="com.google.android.gms.maps.SupportMapFragment"
+              map:layout_constraintTop_toTopOf="parent"
+              map:layout_constraintStart_toStartOf="parent"
+              map:layout_constraintEnd_toEndOf="parent"
+              android:layout_marginBottom="2dp" map:layout_constraintBottom_toTopOf="@+id/recyclerView"/>
+    <android.support.v7.widget.RecyclerView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            map:layout_constraintStart_toStartOf="parent"
+            map:layout_constraintEnd_toEndOf="parent" android:id="@+id/recyclerView"
+            android:layout_marginBottom="4dp" map:layout_constraintBottom_toTopOf="@+id/include"
+            android:layout_marginTop="2dp" map:layout_constraintTop_toBottomOf="@+id/map"/>
+    <include android:layout_width="0dp" android:layout_height="wrap_content" layout="@layout/place_type_menu"
+             map:layout_constraintStart_toStartOf="parent"
+             map:layout_constraintEnd_toEndOf="parent"
+             map:layout_constraintBottom_toBottomOf="parent" android:id="@+id/include"
+             android:layout_marginTop="4dp" map:layout_constraintTop_toBottomOf="@+id/recyclerView"/>
+</android.support.constraint.ConstraintLayout>
