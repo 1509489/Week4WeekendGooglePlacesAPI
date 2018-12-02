@@ -34,7 +34,7 @@
 
         <uses-library
                 android:name="org.apache.http.legacy"
-                android:required="false" />
+                android:required="false"/>
 
         <activity
                 android:name=".PlacesActivity"
@@ -44,6 +44,8 @@
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
+        </activity>
+        <activity android:name=".DetailActivity">
         </activity>
     </application>
 
